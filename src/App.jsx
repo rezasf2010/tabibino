@@ -139,7 +139,7 @@ const App = () => {
                 <select
                   id="countryCode"
                   name="countryCode"
-                  className="h-14 p-2 pl-1 border-l border-t border-b border-gray-300 rounded-l-lg w-16 shadow-lg"
+                  className="h-14 p-2 pl-1 bg-white border-l border-t border-b border-gray-300 rounded-l-lg w-16 shadow-lg"
                   value={formData.countryCode}
                   dir="ltr"
                   onChange={handleChange}
@@ -167,7 +167,7 @@ const App = () => {
             <select
               id="sex"
               name="sex"
-              className="h-14 w-full py-2 px-6 border border-gray-300 rounded-lg font-semibold text-xs sm:text-base text-gray-400 shadow-lg"
+              className="h-14 w-full py-2 px-6 bg-white border border-gray-300 rounded-lg font-semibold text-xs sm:text-base text-gray-400 shadow-lg"
               value={formData.sex}
               onChange={handleChange}
               required
@@ -198,7 +198,7 @@ const App = () => {
             <select
               id="city"
               name="city"
-              className="h-14 w-full py-2 px-6 border border-gray-300 rounded-lg font-semibold text-xs sm:text-base text-gray-400 shadow-lg"
+              className="h-14 w-full py-2 px-6 border bg-white border-gray-300 rounded-lg font-semibold text-xs sm:text-base text-gray-400 shadow-lg"
               value={formData.city}
               onChange={handleChange}
             >
@@ -228,7 +228,7 @@ const App = () => {
             <select
               id="birthday"
               name="birthday"
-              className="h-14 w-full py-2 px-6 border border-gray-300 rounded-lg font-semibold text-xs sm:text-base text-gray-400 shadow-lg"
+              className="h-14 w-full py-2 px-6 border bg-white border-gray-300 rounded-lg font-semibold text-xs sm:text-base text-gray-400 shadow-lg"
               value={formData.birthday}
               onChange={handleChange}
             >

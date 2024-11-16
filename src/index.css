@@ -1,0 +1,53 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@layer base {
+    body {
+      font-family: iransansx, tahoma;
+      direction: rtl; /* Reverse the direction */
+      overflow-x: hidden;
+      -moz-font-feature-settings: "ss02", "ss03", "ss04";
+      -webkit-font-feature-settings: "ss02", "ss03", "ss04";
+      font-feature-settings: "ss02", "ss03", "ss04";
+    }
+  
+    @supports (font-variation-settings: normal) {
+      body {
+        font-family: "iransansxv", tahoma;
+      }
+    }
+  }
+  
+  /* Add your font-face definitions */
+  @font-face {
+    font-family: "iransansxv";
+    src:
+      url("/fonts/IRANSansXV.woff") format("woff-variations"),
+      url("/fonts/IRANSansXV.woff2") format("woff-variations"),
+      /* will be the standard and works in Safari now */
+        url("/fonts/IRANSansXV.woff") format("woff");
+    font-weight: 100 1000;
+    font-display: fallback;
+  }
+  
+  @font-face {
+    font-family: iransansx;
+    src: url("/fonts/IRANSansX-Regular.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: iransansx;
+    src: url("/fonts/IRANSansXV.woff") format("woff");
+    font-weight: 700;
+  }
+
+select {
+  appearance: none; 
+}
+
+.gradient-btn {
+  background: linear-gradient(to left, #9A1CDF, #6B21A8);
+}
+
+  
